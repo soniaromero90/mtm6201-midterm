@@ -119,16 +119,13 @@ header {
     position: relative;
 
     text-align:left;
-    padding: 0 1em;
-
-    height: 50vh;
+    padding: 2em;
 
     margin-bottom: 20px;
 }
 
 .hero-section {
     text-align: left;
-    position: absolute;
 
     top: 20%;
     bottom: 50%;
@@ -154,6 +151,7 @@ h1 {
 }
 
 .button1 {
+    display: inline-block;
     color: white;
     background-color: #E87D84;
     text-transform: uppercase;
