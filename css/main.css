@@ -415,6 +415,14 @@ footer p {
 
     }
 
+    .product a img {
+        transition: 0.2s ease-in-out;
+    }
+
+    .product a img:hover {
+        transform: scale(.9);
+    }
+
 .menu-nav ul li a {
     transition: 0.2s ease-in-out;
 }
