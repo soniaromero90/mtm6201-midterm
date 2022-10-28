@@ -59,7 +59,6 @@ body {
 
 p {
     line-height: 1.2em;
-
     margin-bottom: 30px;
 }
 
@@ -72,6 +71,10 @@ p {
 }
 
 nav {
+
+    display: flex;
+    flex-direction: column;
+
     background-color: #312C74;
 
     margin: 0 auto;
@@ -128,7 +131,6 @@ header {
     position: absolute;
     top: 20%;
     bottom: 50%;
-
 
 }
 
@@ -267,6 +269,15 @@ h3 {
 .services h2, .services i, .services h3, .services p {
     color: white;
 }
+.services h2 {
+    margin-bottom: 20px;
+}
+.service-flex {
+    display: flex;
+
+    flex-direction: column;
+}
+
 .service-card {
     display: flex;
     flex-direction: column;
@@ -295,13 +306,6 @@ h3 {
     margin-top: 20px;
 }
 
-.home-info:nth-child(1) {
-    order: 2;
-}
-.home-info:nth-child(2) {
-    order: 1;
-}
-
 .home-info div {
     margin-bottom: 30px;
 }
@@ -315,6 +319,9 @@ footer {
 
     padding: 10px;
     color: white;
+
+    display: flex;
+    flex-direction: column;
 }
 
 footer img {
@@ -330,9 +337,53 @@ footer p {
     font-size: .5em;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
 
-    
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
 
-    
+    .menu-nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .featured-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr ;
+    }
+
+
+    .service-flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .home-info {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer img {
+        width: 100px;
+    }
+
+    footer p {
+        text-align: right;
+    }
+
+
 }
+
