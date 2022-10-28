@@ -129,8 +129,12 @@ header {
 .hero-section {
     text-align: left;
     position: absolute;
+
     top: 20%;
     bottom: 50%;
+
+    margin: auto;
+    max-width: 900px;
 
 }
 
@@ -382,6 +386,33 @@ footer p {
 
     footer p {
         text-align: right;
+    }
+
+    @keyframes product-swing {
+        15% {
+            transform: translateX(5px);
+        }
+        30% {
+            transform: translateX(-5px);
+        }
+        50% {
+            transform: translateX(3px);
+        }
+        65% {
+            transform: translateX(-3px);
+        }
+        80% {
+            transform: translateX(2px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .button2:hover {
+        animation: product-swing 0.5s ease;
+        animation-iteration-count: 1;
+
     }
 
 
