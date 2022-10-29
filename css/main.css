@@ -376,15 +376,14 @@ footer p {
     footer {
         display: flex;
         flex-direction: row;
+
+        justify-content: space-between;
     }
 
     footer img {
         width: 100px;
     }
 
-    footer p {
-        text-align: right;
-    }
 
     @keyframes product-swing {
         15% {
