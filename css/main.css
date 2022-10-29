@@ -111,7 +111,7 @@ nav {
 
 
 header {
-    background-image: linear-gradient(rgba(49,44,116,0.6), rgba(49, 44, 116, 0.6)), url("../images/hero-image.jpg");    
+    background-image: linear-gradient(rgba(49,44,116,0.6), rgba(49, 44, 116, 0.6)), url("../images/hero-image-1600x500.jpg");    
 
     background-position: center;
     background-repeat: no-repeat;
@@ -249,7 +249,7 @@ h2 {
 
 .services {
 
-    background-image: linear-gradient(rgba(49,44,116,0.8), rgba(49, 44, 116, 0.8)), url("../images/services.jpg");   
+    background-image: linear-gradient(rgba(49,44,116,0.8), rgba(49, 44, 116, 0.8)), url("../images/services-1600x500.jpg");   
 
     background-position: center;
     background-repeat: no-repeat;
