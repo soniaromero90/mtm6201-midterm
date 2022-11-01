@@ -471,3 +471,18 @@ footer p {
 .left-heading {
     text-align: left;
 }
+
+.menu-header {
+
+    background-image: linear-gradient(rgba(49,44,116,0.6), rgba(49, 44, 116, 0.6)), url("../images/about-hero-1600x500.jpg");    
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    text-align:left;
+    padding: 4em;
+
+    margin-bottom: 20px;
+}
