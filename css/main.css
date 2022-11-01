@@ -51,7 +51,18 @@ table {
 
 
 
-/* Start of my CSS Code */
+/*********************
+
+Start of my CSS Code 
+
+*********************/
+
+
+
+/* Home Page CSS Style */
+
+
+
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -344,7 +355,91 @@ footer p {
     font-size: .5em;
 }
 
+/* Menu Page CSS Style */
+
+.menu-header {
+
+    background-image: linear-gradient(rgba(49,44,116,0.6), rgba(49, 44, 116, 0.6)), url("../images/menu-hero-1600x500.jpg");    
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    text-align:left;
+    padding: 4em;
+
+    margin-bottom: 20px;
+}
+
+.hero-menu {
+
+    text-align: center;
+
+    top: 20%;
+    bottom: 50%;
+
+    margin: auto;
+    max-width: 900px;
+
+}
+.left-heading {
+    text-align: left;
+}
+
+.menu-header {
+
+    background-image: linear-gradient(rgba(49,44,116,0.6), rgba(49, 44, 116, 0.6)), url("../images/about-hero-1600x500.jpg");    
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    text-align:left;
+    padding: 4em;
+
+    margin-bottom: 20px;
+}
+
+.flex-about {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.flex-about div img {
+    width: 100%;
+}
+
+.about-tradition {
+
+    background-image: linear-gradient(rgba(49,44,116,0.8), rgba(49, 44, 116, 0.8)), url("../images/about-1600x500.jpg");   
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    padding: 4em 0;
+
+}
+
+.about-tradition h2, .about-tradition p {
+    color: white;
+    text-align: center;
+}
+
+
+/***************
+
+Desktop Version
+
+****************/
+
+
 @media screen and (min-width: 900px) {
+
 
     nav {
         display: flex;
@@ -425,64 +520,22 @@ footer p {
         transform: scale(.9);
     }
 
-.menu-nav ul li a {
-    transition: 0.2s ease-in-out;
-}
-.menu-nav ul li:hover {
-    transform: scale(1.2);
-}
+    .menu-nav ul li a {
+        transition: 0.2s ease-in-out;
+    }
+    .menu-nav ul li:hover {
+        transform: scale(1.2);
+    }
 
-.button1 {
-    transition: 0.2s ease-in-out;
-}
+    .button1 {
+        transition: 0.2s ease-in-out;
+    }
 
 
+    .flex-about {
+        display: flex;
+        flex-direction: row;
+    }
 
-}
 
-/* Menu CSS Style */
-
-.menu-header {
-
-    background-image: linear-gradient(rgba(49,44,116,0.6), rgba(49, 44, 116, 0.6)), url("../images/menu-hero-1600x500.jpg");    
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-
-    text-align:left;
-    padding: 4em;
-
-    margin-bottom: 20px;
-}
-
-.hero-menu {
-
-    text-align: center;
-
-    top: 20%;
-    bottom: 50%;
-
-    margin: auto;
-    max-width: 900px;
-
-}
-.left-heading {
-    text-align: left;
-}
-
-.menu-header {
-
-    background-image: linear-gradient(rgba(49,44,116,0.6), rgba(49, 44, 116, 0.6)), url("../images/about-hero-1600x500.jpg");    
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-
-    text-align:left;
-    padding: 4em;
-
-    margin-bottom: 20px;
 }
