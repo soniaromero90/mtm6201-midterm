@@ -93,6 +93,7 @@ p {
 
 /* Navigation Menu */
 
+/* The navigation menu is displayed vertically on mobile */
 
 nav {
 
@@ -131,12 +132,16 @@ nav {
     text-align: center;
 }
 
+/* The menu link changes colour when the mouse is hover */
+
 .menu-nav ul li a:hover {
     background-color: #E87D84;
 }
 
 /* Homepage Header */
 
+
+/* The header has a background image and a title, text and a button */
 
 header {
     background-image: linear-gradient(rgba(49,44,116,0.6), rgba(49, 44, 116, 0.6)), url("../images/hero-image-1600x500.jpg");    
@@ -202,6 +207,8 @@ h1 {
 
 /* Featured Products section in the homepage */
 
+
+
 h2 {
     color: #312C74;
     font-family: 'Archivo Black', sans-serif;
@@ -213,6 +220,8 @@ h2 {
     margin-bottom: 1em;
     
 }
+
+/* Each product has an image and below there's the name of the product and price and a button to add to cart */
 
 .product {
     display: flex;
@@ -248,6 +257,9 @@ h2 {
 .button2:hover {
     background-color: #312C74;
 }
+
+/* The featured section shows a grid with the products in 2 columns on mobile. */
+
 
 .featured-grid {
     display: grid;
@@ -286,6 +298,8 @@ h2 {
 
 /* Services section in the homepage */
 
+/* The Services Section has a background image with the text overlayed */
+
 .services {
 
     background-image: linear-gradient(rgba(49,44,116,0.8), rgba(49, 44, 116, 0.8)), url("../images/services-1600x500.jpg");   
@@ -313,6 +327,9 @@ h3 {
 .services h2 {
     margin-bottom: 2em;
 }
+
+/* The services are displayed vertically on mobile and horizontally on desktop */
+
 .service-flex {
     display: flex;
 
@@ -343,6 +360,8 @@ h3 {
 
 /* About us information in the homepage */
 
+/* The info section is displayed vertically on mobile, and it has a title, paragraphs, a button to go to the About page and an image */
+
 .home-info {
     display: flex;
     flex-direction: column;
@@ -359,6 +378,8 @@ h3 {
 }
 
 /* Footer Section */
+
+/* The footer section has a backround colour and is displayed horizontally on mobile */
 
 footer {
     background-color:#95C0E1;
@@ -390,6 +411,8 @@ Menu.html Page CSS Style
 
 *************/
 
+/* The Menu title has a bacckground image and the text is centred */
+
 .menu-header {
 
     background-image: linear-gradient(rgba(49,44,116,0.6), rgba(49, 44, 116, 0.6)), url("../images/menu-hero-1600x500.jpg");    
@@ -416,11 +439,23 @@ Menu.html Page CSS Style
     max-width: 900px;
 
 }
+
+/* The heading is aligned to the left */
+
 .left-heading {
     text-align: left;
 }
 
-.menu-header {
+/***********
+
+About.html Page CSS Style 
+
+
+*************/
+
+/* The About Us title has a background image and the title is centred */
+
+.about-header {
 
     background-image: linear-gradient(rgba(49,44,116,0.6), rgba(49, 44, 116, 0.6)), url("../images/about-hero-1600x500.jpg");    
 
@@ -435,12 +470,7 @@ Menu.html Page CSS Style
     margin-bottom: 20px;
 }
 
-/***********
-
-About.html Page CSS Style 
-
-
-*************/
+/* The About Us information has an image and is displayed vertically on mobile and in 2 columns on desktop */
 
 .flex-about {
     display: flex;
@@ -451,6 +481,8 @@ About.html Page CSS Style
 .flex-about div img {
     width: 100%;
 }
+
+/* This section is displayed full width and has a background image and white text */
 
 .about-tradition {
 
@@ -472,6 +504,8 @@ About.html Page CSS Style
     text-align: center;
 }
 
+/* The Meet the team section is displayed vertically on mobile and horizontally on desktop */
+
 .team {
     display: flex;
 
@@ -479,6 +513,8 @@ About.html Page CSS Style
 
 
 }
+
+/* Each tem member has a photo and below there is their name and position centred */
 
 .team-member img {
     width: 100%;
@@ -492,13 +528,19 @@ About.html Page CSS Style
 
 /***************
 
-Desktop Version
+Desktop Version (More than 900px)
 
 ****************/
 
 
+
+/* Homepage CSS Style */
+
+
+
 @media screen and (min-width: 900px) {
 
+    /* The Menu will change to horizontal when the screen is bigger than 900px */
 
     nav {
         display: flex;
@@ -514,23 +556,30 @@ Desktop Version
         width: 150px;
     }
 
+    /* The Featured products section will be displayed in 3 columns */
+
     .featured-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr ;
     }
 
+    /* The services will be displayed horizontally on desktop size */
 
     .service-flex {
         display: flex;
         flex-direction: row;
     }
 
+    /* The About info in the homepage is going to split into 2 columns, one for the title, paragraphs and button and the other column with the image */
+
     .home-info {
         display: flex;
         flex-direction: row;
         gap: 10px;
     }
+
+    /* The footer will be displayed horizontally on desktop version */
 
     footer {
         display: flex;
@@ -543,6 +592,7 @@ Desktop Version
         width: 100px;
     }
 
+    /* Whith the screen size more than 900px, the buttons to add to cart will shake when the mouse hovers.  */
 
     @keyframes product-swing {
         15% {
@@ -571,6 +621,8 @@ Desktop Version
 
     }
 
+    /* Whith the screen size more than 900px, the photos of products will shrink when the mouse hovers */
+
     .product a img {
         transition: 0.2s ease-in-out;
     }
@@ -578,6 +630,8 @@ Desktop Version
     .product a img:hover {
         transform: scale(.9);
     }
+
+      /* Whith the screen size more than 900px, the menu links will grow a little bit when the mouse hovers */
 
     .menu-nav ul li a {
         transition: 0.2s ease-in-out;
@@ -590,11 +644,17 @@ Desktop Version
         transition: 0.2s ease-in-out;
     }
 
+/* About.html desktop version */
+
+
+/* The about information will be displayed in 2 columns in desktop size. One for the text at the left and one for the image on the right */
 
     .flex-about {
         display: flex;
         flex-direction: row;
     }
+
+/* The team section will be displayed horizontally when the screen is more than 900px */
 
     .team {
         display: flex;
@@ -602,6 +662,7 @@ Desktop Version
 
         gap: 1em;
     }
+/* Each team member photo will shrink a little when the mouse hovers */
 
     .team-member img {
         transition: 0.2s ease-in-out;
